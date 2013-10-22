@@ -21,6 +21,8 @@
 		A36BC3071816200A007F944F /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A36BC2E91816200A007F944F /* UIKit.framework */; };
 		A36BC30F1816200A007F944F /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = A36BC30D1816200A007F944F /* InfoPlist.strings */; };
 		A36BC3111816200A007F944F /* HomeworkTwoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = A36BC3101816200A007F944F /* HomeworkTwoTests.m */; };
+		A36BC31F181620D6007F944F /* KMCookie.m in Sources */ = {isa = PBXBuildFile; fileRef = A36BC31E181620D6007F944F /* KMCookie.m */; };
+		A36BC322181623EF007F944F /* KMCookieDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A36BC321181623EF007F944F /* KMCookieDetailViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +55,10 @@
 		A36BC30C1816200A007F944F /* HomeworkTwoTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "HomeworkTwoTests-Info.plist"; sourceTree = "<group>"; };
 		A36BC30E1816200A007F944F /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		A36BC3101816200A007F944F /* HomeworkTwoTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HomeworkTwoTests.m; sourceTree = "<group>"; };
+		A36BC31D181620D6007F944F /* KMCookie.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KMCookie.h; sourceTree = "<group>"; };
+		A36BC31E181620D6007F944F /* KMCookie.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KMCookie.m; sourceTree = "<group>"; };
+		A36BC320181623EF007F944F /* KMCookieDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KMCookieDetailViewController.h; sourceTree = "<group>"; };
+		A36BC321181623EF007F944F /* KMCookieDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KMCookieDetailViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -82,6 +88,8 @@
 		A36BC2D91816200A007F944F = {
 			isa = PBXGroup;
 			children = (
+				A36BC31D181620D6007F944F /* KMCookie.h */,
+				A36BC31E181620D6007F944F /* KMCookie.m */,
 				A36BC2EB1816200A007F944F /* HomeworkTwo */,
 				A36BC30A1816200A007F944F /* HomeworkTwoTests */,
 				A36BC2E41816200A007F944F /* Frameworks */,
@@ -119,6 +127,8 @@
 				A36BC2FB1816200A007F944F /* KMViewController.m */,
 				A36BC2FD1816200A007F944F /* Images.xcassets */,
 				A36BC2EC1816200A007F944F /* Supporting Files */,
+				A36BC320181623EF007F944F /* KMCookieDetailViewController.h */,
+				A36BC321181623EF007F944F /* KMCookieDetailViewController.m */,
 			);
 			path = HomeworkTwo;
 			sourceTree = "<group>";
@@ -250,9 +260,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A36BC322181623EF007F944F /* KMCookieDetailViewController.m in Sources */,
 				A36BC2FC1816200A007F944F /* KMViewController.m in Sources */,
 				A36BC2F61816200A007F944F /* KMAppDelegate.m in Sources */,
 				A36BC2F21816200A007F944F /* main.m in Sources */,
+				A36BC31F181620D6007F944F /* KMCookie.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
