@@ -14,7 +14,6 @@
 		A36BC2F21816200A007F944F /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = A36BC2F11816200A007F944F /* main.m */; };
 		A36BC2F61816200A007F944F /* KMAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = A36BC2F51816200A007F944F /* KMAppDelegate.m */; };
 		A36BC2F91816200A007F944F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A36BC2F71816200A007F944F /* Main.storyboard */; };
-		A36BC2FC1816200A007F944F /* KMViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A36BC2FB1816200A007F944F /* KMViewController.m */; };
 		A36BC2FE1816200A007F944F /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A36BC2FD1816200A007F944F /* Images.xcassets */; };
 		A36BC3051816200A007F944F /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A36BC3041816200A007F944F /* XCTest.framework */; };
 		A36BC3061816200A007F944F /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A36BC2E51816200A007F944F /* Foundation.framework */; };
@@ -23,6 +22,9 @@
 		A36BC3111816200A007F944F /* HomeworkTwoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = A36BC3101816200A007F944F /* HomeworkTwoTests.m */; };
 		A36BC31F181620D6007F944F /* KMCookie.m in Sources */ = {isa = PBXBuildFile; fileRef = A36BC31E181620D6007F944F /* KMCookie.m */; };
 		A36BC322181623EF007F944F /* KMCookieDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A36BC321181623EF007F944F /* KMCookieDetailViewController.m */; };
+		A36BC32518175152007F944F /* KMPost.m in Sources */ = {isa = PBXBuildFile; fileRef = A36BC32418175152007F944F /* KMPost.m */; };
+		A36BC328181756B6007F944F /* KMPostTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = A36BC327181756B6007F944F /* KMPostTableViewCell.m */; };
+		A36BC32B1817614A007F944F /* KMPostsTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A36BC32A1817614A007F944F /* KMPostsTableViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,8 +49,6 @@
 		A36BC2F41816200A007F944F /* KMAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KMAppDelegate.h; sourceTree = "<group>"; };
 		A36BC2F51816200A007F944F /* KMAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KMAppDelegate.m; sourceTree = "<group>"; };
 		A36BC2F81816200A007F944F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		A36BC2FA1816200A007F944F /* KMViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KMViewController.h; sourceTree = "<group>"; };
-		A36BC2FB1816200A007F944F /* KMViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KMViewController.m; sourceTree = "<group>"; };
 		A36BC2FD1816200A007F944F /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		A36BC3031816200A007F944F /* HomeworkTwoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HomeworkTwoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		A36BC3041816200A007F944F /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
@@ -59,6 +59,12 @@
 		A36BC31E181620D6007F944F /* KMCookie.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KMCookie.m; sourceTree = "<group>"; };
 		A36BC320181623EF007F944F /* KMCookieDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KMCookieDetailViewController.h; sourceTree = "<group>"; };
 		A36BC321181623EF007F944F /* KMCookieDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KMCookieDetailViewController.m; sourceTree = "<group>"; };
+		A36BC32318175151007F944F /* KMPost.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KMPost.h; sourceTree = "<group>"; };
+		A36BC32418175152007F944F /* KMPost.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KMPost.m; sourceTree = "<group>"; };
+		A36BC326181756B6007F944F /* KMPostTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KMPostTableViewCell.h; sourceTree = "<group>"; };
+		A36BC327181756B6007F944F /* KMPostTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KMPostTableViewCell.m; sourceTree = "<group>"; };
+		A36BC3291817614A007F944F /* KMPostsTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KMPostsTableViewController.h; sourceTree = "<group>"; };
+		A36BC32A1817614A007F944F /* KMPostsTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KMPostsTableViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -88,6 +94,8 @@
 		A36BC2D91816200A007F944F = {
 			isa = PBXGroup;
 			children = (
+				A36BC32318175151007F944F /* KMPost.h */,
+				A36BC32418175152007F944F /* KMPost.m */,
 				A36BC31D181620D6007F944F /* KMCookie.h */,
 				A36BC31E181620D6007F944F /* KMCookie.m */,
 				A36BC2EB1816200A007F944F /* HomeworkTwo */,
@@ -123,12 +131,14 @@
 				A36BC2F41816200A007F944F /* KMAppDelegate.h */,
 				A36BC2F51816200A007F944F /* KMAppDelegate.m */,
 				A36BC2F71816200A007F944F /* Main.storyboard */,
-				A36BC2FA1816200A007F944F /* KMViewController.h */,
-				A36BC2FB1816200A007F944F /* KMViewController.m */,
 				A36BC2FD1816200A007F944F /* Images.xcassets */,
 				A36BC2EC1816200A007F944F /* Supporting Files */,
 				A36BC320181623EF007F944F /* KMCookieDetailViewController.h */,
 				A36BC321181623EF007F944F /* KMCookieDetailViewController.m */,
+				A36BC326181756B6007F944F /* KMPostTableViewCell.h */,
+				A36BC327181756B6007F944F /* KMPostTableViewCell.m */,
+				A36BC3291817614A007F944F /* KMPostsTableViewController.h */,
+				A36BC32A1817614A007F944F /* KMPostsTableViewController.m */,
 			);
 			path = HomeworkTwo;
 			sourceTree = "<group>";
@@ -261,10 +271,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				A36BC322181623EF007F944F /* KMCookieDetailViewController.m in Sources */,
-				A36BC2FC1816200A007F944F /* KMViewController.m in Sources */,
+				A36BC328181756B6007F944F /* KMPostTableViewCell.m in Sources */,
+				A36BC32518175152007F944F /* KMPost.m in Sources */,
 				A36BC2F61816200A007F944F /* KMAppDelegate.m in Sources */,
 				A36BC2F21816200A007F944F /* main.m in Sources */,
 				A36BC31F181620D6007F944F /* KMCookie.m in Sources */,
+				A36BC32B1817614A007F944F /* KMPostsTableViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
