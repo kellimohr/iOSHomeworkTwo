@@ -7,6 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "KMPost.h"
 
 @interface KMPostsTableViewController : UITableViewController
 

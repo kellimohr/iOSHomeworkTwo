@@ -2,7 +2,7 @@
 //  KMPostTableViewCell.m
 //  HomeworkTwo
 //
-//  Created by Kelli Mohr on 10/22/13.
+//  Created by Kelli Mohr on 10/23/13.
 //  Copyright (c) 2013 Kelli Mohr. All rights reserved.
 //
 
@@ -24,6 +24,16 @@
     [super setSelected:selected animated:animated];
 
     // Configure the view for the selected state
+}
+
+@synthesize userNameText;
+@synthesize titleText;
+@synthesize contentView;
+@synthesize dateText;
+
+- (IBAction)setUserNameText:(UITextField *)userNameText
+{
+    
 }
 
 @end

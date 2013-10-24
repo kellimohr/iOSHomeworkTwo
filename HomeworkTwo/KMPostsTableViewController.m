@@ -7,6 +7,8 @@
 //
 
 #import "KMPostsTableViewController.h"
+#import "KMPost.h"
+#import "KMPostTableViewCell.h"
 
 @interface KMPostsTableViewController ()
 
@@ -26,6 +28,22 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+    
+    KMPost *post1 = [[KMPost alloc] init];
+    post1.userName = @"Kelli Mohr";
+    post1.title = @"iOS Tables";
+    post1.content = @"I really hope I'm doing this right.";
+    post1.timeStamp = [NSDate date];
+    
+    KMPost *post2 = [[KMPost alloc] init];
+    post2.userName = @"Kelli Mohr";
+    post2.title = @"More iOS Tables";
+    post2.content = @"I really really hope I'm doing this right.";
+    post2.timeStamp = [NSDate date];
+    
+    _posts = [NSArray arrayWithObjects: post1, post2, nil];
+    
+    NSLog(@"%d", [_posts count]);
 
     // Uncomment the following line to preserve selection between presentations.
     // self.clearsSelectionOnViewWillAppear = NO;
@@ -58,10 +76,15 @@
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    static NSString *CellIdentifier = @"Cell";
-    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier forIndexPath:indexPath];
+    static NSString *CellIdentifier = @"PostTableViewCell";
+    KMPostTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier forIndexPath:indexPath];
     
     // Configure the cell...
+    //cell.post = [_posts[indexPath.row]];
+    cell.userNameText.text = [_posts[indexPath.row] userName];
+    cell.titleText.text = [_posts[indexPath.row] title];
+    cell.contentView.text = [_posts[indexPath.row] content];
+    cell.dateText.text = [_posts[indexPath.row] date];
     
     return cell;
 }
@@ -75,7 +98,7 @@
 }
 */
 
-
+/*
 // Override to support editing the table view.
 - (void)tableView:(UITableView *)tableView commitEditingStyle:(UITableViewCellEditingStyle)editingStyle forRowAtIndexPath:(NSIndexPath *)indexPath
 {
@@ -87,7 +110,7 @@
         // Create a new instance of the appropriate class, insert it into the array, and add a new row to the table view
     }   
 }
-
+*/
 
 /*
 // Override to support rearranging the table view.

@@ -2,7 +2,7 @@
 //  KMPostTableViewCell.h
 //  HomeworkTwo
 //
-//  Created by Kelli Mohr on 10/22/13.
+//  Created by Kelli Mohr on 10/23/13.
 //  Copyright (c) 2013 Kelli Mohr. All rights reserved.
 //
 
@@ -11,6 +11,11 @@
 
 @interface KMPostTableViewCell : UITableViewCell
 
-@property KMPost *post;
+@property (nonatomic, strong) IBOutlet KMPost *post;
+@property (nonatomic, strong) IBOutlet UITextField *userNameText;
+@property (nonatomic, strong) IBOutlet UITextField *titleText;
+@property (nonatomic, strong) IBOutlet UITextView *contentView;
+@property (nonatomic, strong) IBOutlet UITextField *dateText;
 
+- (IBAction)setUserNameText:(UITextField *)userNameText;
 @end
