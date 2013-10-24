@@ -43,32 +43,32 @@
     
     KMPost *post3 = [[KMPost alloc] init];
     post3.userName = @"Kelli Mohr";
-    post3.title = @"More iOS Tables";
+    post3.title = @"Custom Table View Cells";
     post3.content = @"I went down a crazy path.";
     post3.timeStamp = [NSDate date];
     
     KMPost *post4 = [[KMPost alloc] init];
     post4.userName = @"Kelli Mohr";
-    post4.title = @"More iOS Tables";
+    post4.title = @"Custom Table View Cells";
     post4.content = @"Is there any way back?!";
     post4.timeStamp = [NSDate date];
     
     KMPost *post5 = [[KMPost alloc] init];
     post5.userName = @"Kelli Mohr";
-    post5.title = @"More iOS Tables";
+    post5.title = @"Dates to Strings";
     post5.content = @"Ugh. Format Date to String";
     post5.timeStamp = [NSDate date];
     
     KMPost *post6 = [[KMPost alloc] init];
     post6.userName = @"Kelli Mohr";
-    post6.title = @"More iOS Tables";
-    post6.content = @"I really really hope I'm doing this right.";
+    post6.title = @"Date Formats";
+    post6.content = @"Found a tutorial.";
     post6.timeStamp = [NSDate date];
     
     KMPost *post7 = [[KMPost alloc] init];
     post7.userName = @"Kelli Mohr";
     post7.title = @"More iOS Tables";
-    post7.content = @"I really really hope I'm doing this right.";
+    post7.content = @"Why doesn't this scroll?";
     post7.timeStamp = [NSDate date];
     
     KMPost *post8 = [[KMPost alloc] init];
