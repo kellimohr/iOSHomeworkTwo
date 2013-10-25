@@ -26,10 +26,10 @@
     // Configure the view for the selected state
 }
 
-@synthesize userNameText;
-@synthesize titleText;
-@synthesize contentView;
-@synthesize dateText;
+@synthesize userNameLabel;
+@synthesize titleLabel;
+@synthesize contentLabel;
+@synthesize dateLabel;
 
 - (IBAction)setUserNameText:(UITextField *)userNameText
 {

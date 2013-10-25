@@ -125,7 +125,7 @@
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
     static NSString *CellIdentifier = @"PostTableViewCell";
-    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier forIndexPath:indexPath];
+    KMPostTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier forIndexPath:indexPath];
     
     
     NSDate *postDate = [_posts[indexPath.row] timeStamp];
@@ -135,14 +135,14 @@
     
     // Configure the cell...
     //cell.post = [_posts[indexPath.row]];
-    //cell.userNameText.text = [_posts[indexPath.row] userName];
-    //cell.titleText.text = [_posts[indexPath.row] title];
-    //cell.contentView.text = [_posts[indexPath.row] content];
-    //cell.dateText.text = [_posts[indexPath.row] timeStamp];
+    cell.userNameLabel.text = [_posts[indexPath.row] userName];
+    cell.titleLabel.text = [_posts[indexPath.row] title];
+    cell.contentLabel.text = [_posts[indexPath.row] content];
+    cell.dateLabel.text = dateString;
     
     
-    cell.textLabel.text = [NSString stringWithFormat:@"%@ - %@",[_posts[indexPath.row] title], [_posts[indexPath.row] userName] ];
-    cell.detailTextLabel.text = [NSString stringWithFormat:@"%@  %@", [_posts[indexPath.row] content], dateString];
+    //cell.textLabel.text = [NSString stringWithFormat:@"%@ - %@",[_posts[indexPath.row] title], [_posts[indexPath.row] userName] ];
+    //cell.detailTextLabel.text = [NSString stringWithFormat:@"%@  %@", [_posts[indexPath.row] content], dateString];
     
     return cell;
 }
