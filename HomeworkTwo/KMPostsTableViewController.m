@@ -127,6 +127,12 @@
     static NSString *CellIdentifier = @"PostTableViewCell";
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier forIndexPath:indexPath];
     
+    
+    NSDate *postDate = [_posts[indexPath.row] timeStamp];
+    NSDateFormatter *dateFormat = [[NSDateFormatter alloc] init];
+    [dateFormat setDateStyle:NSDateFormatterShortStyle];
+    NSString *dateString = [dateFormat stringFromDate:postDate];
+    
     // Configure the cell...
     //cell.post = [_posts[indexPath.row]];
     //cell.userNameText.text = [_posts[indexPath.row] userName];
@@ -134,10 +140,6 @@
     //cell.contentView.text = [_posts[indexPath.row] content];
     //cell.dateText.text = [_posts[indexPath.row] timeStamp];
     
-    NSDate *postDate = [_posts[indexPath.row] timeStamp];
-    NSDateFormatter *dateFormat = [[NSDateFormatter alloc] init];
-    [dateFormat setDateStyle:NSDateFormatterShortStyle];
-    NSString *dateString = [dateFormat stringFromDate:postDate];
     
     cell.textLabel.text = [NSString stringWithFormat:@"%@ - %@",[_posts[indexPath.row] title], [_posts[indexPath.row] userName] ];
     cell.detailTextLabel.text = [NSString stringWithFormat:@"%@  %@", [_posts[indexPath.row] content], dateString];
