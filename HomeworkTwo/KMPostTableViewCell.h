@@ -10,19 +10,12 @@
 #import "KMPost.h"
 
 @interface KMPostTableViewCell : UITableViewCell
-{
-    UILabel *userNameLabel;
-    UILabel *titleLabel;
-    UILabel *contentLabel;
-    UILabel *dateLabel;
-}
 
 @property (nonatomic, strong) IBOutlet KMPost *post;
 
-@property (nonatomic, strong) IBOutlet UITextField *userNameLabel;
-@property (nonatomic, strong) IBOutlet UITextField *titleLabel;
-@property (nonatomic, strong) IBOutlet UITextView *contentLabel;
-@property (nonatomic, strong) IBOutlet UITextField *dateLabel;
+@property (nonatomic, strong) IBOutlet UILabel *userNameLabel;
+@property (nonatomic, strong) IBOutlet UILabel *titleLabel;
+@property (nonatomic, strong) IBOutlet UILabel *contentLabel;
+@property (nonatomic, strong) IBOutlet UILabel *dateLabel;
 
-- (IBAction)setUserNameText:(UITextField *)userNameText;
 @end
