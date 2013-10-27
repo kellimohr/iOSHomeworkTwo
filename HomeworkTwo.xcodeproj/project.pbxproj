@@ -23,6 +23,7 @@
 		A36BC32518175152007F944F /* KMPost.m in Sources */ = {isa = PBXBuildFile; fileRef = A36BC32418175152007F944F /* KMPost.m */; };
 		A36BC32B1817614A007F944F /* KMPostsTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A36BC32A1817614A007F944F /* KMPostsTableViewController.m */; };
 		A36BC32E1818B514007F944F /* KMPostTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = A36BC32D1818B514007F944F /* KMPostTableViewCell.m */; };
+		A36BC333181A0710007F944F /* KMAddPost.m in Sources */ = {isa = PBXBuildFile; fileRef = A36BC332181A0710007F944F /* KMAddPost.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -59,6 +60,8 @@
 		A36BC32A1817614A007F944F /* KMPostsTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KMPostsTableViewController.m; sourceTree = "<group>"; };
 		A36BC32C1818B514007F944F /* KMPostTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KMPostTableViewCell.h; sourceTree = "<group>"; };
 		A36BC32D1818B514007F944F /* KMPostTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KMPostTableViewCell.m; sourceTree = "<group>"; };
+		A36BC331181A0710007F944F /* KMAddPost.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KMAddPost.h; sourceTree = "<group>"; };
+		A36BC332181A0710007F944F /* KMAddPost.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KMAddPost.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -88,6 +91,8 @@
 		A36BC2D91816200A007F944F = {
 			isa = PBXGroup;
 			children = (
+				A36BC331181A0710007F944F /* KMAddPost.h */,
+				A36BC332181A0710007F944F /* KMAddPost.m */,
 				A36BC32318175151007F944F /* KMPost.h */,
 				A36BC32418175152007F944F /* KMPost.m */,
 				A36BC2EB1816200A007F944F /* HomeworkTwo */,
@@ -261,6 +266,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				A36BC32518175152007F944F /* KMPost.m in Sources */,
+				A36BC333181A0710007F944F /* KMAddPost.m in Sources */,
 				A36BC2F61816200A007F944F /* KMAppDelegate.m in Sources */,
 				A36BC2F21816200A007F944F /* main.m in Sources */,
 				A36BC32B1817614A007F944F /* KMPostsTableViewController.m in Sources */,
