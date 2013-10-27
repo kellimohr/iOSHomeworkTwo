@@ -141,9 +141,6 @@
     cell.dateLabel.text = dateString;
     
     
-    //cell.textLabel.text = [NSString stringWithFormat:@"%@ - %@",[_posts[indexPath.row] title], [_posts[indexPath.row] userName] ];
-    //cell.detailTextLabel.text = [NSString stringWithFormat:@"%@  %@", [_posts[indexPath.row] content], dateString];
-    
     return cell;
 }
 

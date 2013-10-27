@@ -4,7 +4,7 @@
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3742"/>
     </dependencies>
     <scenes>
-        <!--Posts Table View Controller-->
+        <!--Posts Table View Controller - Get Social-->
         <scene sceneID="iwd-Q4-uXG">
             <objects>
                 <tableViewController id="fgj-Df-5Gr" customClass="KMPostsTableViewController" sceneMemberID="viewController">
@@ -13,11 +13,11 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <prototypes>
-                            <tableViewCell contentMode="redraw" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="PostTableViewCell" rowHeight="124" id="FV3-A0-68p" customClass="KMPostTableViewCell">
+                            <tableViewCell contentMode="redraw" selectionStyle="blue" accessoryType="disclosureIndicator" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="PostTableViewCell" editingAccessoryType="disclosureIndicator" rowHeight="124" id="FV3-A0-68p" customClass="KMPostTableViewCell">
                                 <rect key="frame" x="0.0" y="86" width="320" height="124"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="FV3-A0-68p" id="0bU-Sp-NI8">
-                                    <rect key="frame" x="0.0" y="0.0" width="320" height="123"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="287" height="123"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Title" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tMw-Z4-SYT">
@@ -53,6 +53,7 @@
                                     <outlet property="dateLabel" destination="R0S-sD-uUe" id="H8K-Kq-Oif"/>
                                     <outlet property="titleLabel" destination="tMw-Z4-SYT" id="NGc-9n-4Z1"/>
                                     <outlet property="userNameLabel" destination="7SM-Do-MTG" id="F1x-Xg-U5i"/>
+                                    <segue destination="KWe-id-sZR" kind="push" id="qbT-3w-lw8"/>
                                 </connections>
                             </tableViewCell>
                         </prototypes>
@@ -61,7 +62,7 @@
                             <outlet property="delegate" destination="fgj-Df-5Gr" id="HFp-gV-W0b"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" id="e0M-Vq-EmJ"/>
+                    <navigationItem key="navigationItem" title="Get Social" id="e0M-Vq-EmJ"/>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="AR9-BI-Nzr" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -80,6 +81,7 @@
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
+                    <navigationItem key="navigationItem" id="58r-eM-mBd"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ujY-UA-3lm" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
