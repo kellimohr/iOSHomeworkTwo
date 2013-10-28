@@ -12,6 +12,8 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="separatorColor" red="0.98397163720000003" green="0.97015162769999996" blue="0.61517832859999999" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="sectionIndexTrackingBackgroundColor" red="0.98397163720000003" green="0.97015162769999996" blue="0.61517832859999999" alpha="1" colorSpace="calibratedRGB"/>
                         <prototypes>
                             <tableViewCell contentMode="redraw" selectionStyle="blue" accessoryType="disclosureIndicator" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="PostTableViewCell" editingAccessoryType="disclosureIndicator" rowHeight="124" id="FV3-A0-68p" customClass="KMPostTableViewCell">
                                 <rect key="frame" x="0.0" y="86" width="320" height="124"/>
@@ -68,10 +70,10 @@
             </objects>
             <point key="canvasLocation" x="519" y="-253"/>
         </scene>
-        <!--View Controller-->
+        <!--Post Edit View Controller - Edit Post-->
         <scene sceneID="wct-8b-y1K">
             <objects>
-                <viewController id="KWe-id-sZR" sceneMemberID="viewController">
+                <viewController id="KWe-id-sZR" customClass="KMPostEditViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="uyk-xo-dBx"/>
                         <viewControllerLayoutGuide type="bottom" id="eR9-rg-HmE"/>
@@ -79,9 +81,44 @@
                     <view key="view" contentMode="scaleToFill" id="pQm-XI-xxF">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <subviews>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ezk-dT-gS7">
+                                <rect key="frame" x="13" y="119" width="287" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="date" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FjA-8I-j4i">
+                                <rect key="frame" x="266" y="90" width="34" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="title" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xpN-Iq-g2Y">
+                                <rect key="frame" x="13" y="90" width="161" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="userName" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="H1d-sh-I5M">
+                                <rect key="frame" x="221" y="508" width="79" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="0.98397163720000003" green="0.97015162769999996" blue="0.61517832859999999" alpha="1" colorSpace="calibratedRGB"/>
                     </view>
-                    <navigationItem key="navigationItem" id="58r-eM-mBd"/>
+                    <navigationItem key="navigationItem" title="Edit Post" id="58r-eM-mBd">
+                        <barButtonItem key="backBarButtonItem" title="Back" id="djp-c5-RC5"/>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="contentTextField" destination="ezk-dT-gS7" id="fWW-pa-7Vu"/>
+                        <outlet property="dateLabel" destination="FjA-8I-j4i" id="J84-5K-wqy"/>
+                        <outlet property="titleLabel" destination="xpN-Iq-g2Y" id="J61-y4-hVg"/>
+                        <outlet property="userNameLabel" destination="H1d-sh-I5M" id="y4G-uV-raS"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ujY-UA-3lm" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

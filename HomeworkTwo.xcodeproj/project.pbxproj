@@ -24,6 +24,7 @@
 		A36BC32B1817614A007F944F /* KMPostsTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A36BC32A1817614A007F944F /* KMPostsTableViewController.m */; };
 		A36BC32E1818B514007F944F /* KMPostTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = A36BC32D1818B514007F944F /* KMPostTableViewCell.m */; };
 		A36BC333181A0710007F944F /* KMAddPost.m in Sources */ = {isa = PBXBuildFile; fileRef = A36BC332181A0710007F944F /* KMAddPost.m */; };
+		A36BC336181DDBBF007F944F /* KMPostEditViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A36BC335181DDBBF007F944F /* KMPostEditViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -62,6 +63,8 @@
 		A36BC32D1818B514007F944F /* KMPostTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KMPostTableViewCell.m; sourceTree = "<group>"; };
 		A36BC331181A0710007F944F /* KMAddPost.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KMAddPost.h; sourceTree = "<group>"; };
 		A36BC332181A0710007F944F /* KMAddPost.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KMAddPost.m; sourceTree = "<group>"; };
+		A36BC334181DDBBF007F944F /* KMPostEditViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = KMPostEditViewController.h; path = ../KMPostEditViewController.h; sourceTree = "<group>"; };
+		A36BC335181DDBBF007F944F /* KMPostEditViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = KMPostEditViewController.m; path = ../KMPostEditViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -132,6 +135,8 @@
 				A36BC2EC1816200A007F944F /* Supporting Files */,
 				A36BC3291817614A007F944F /* KMPostsTableViewController.h */,
 				A36BC32A1817614A007F944F /* KMPostsTableViewController.m */,
+				A36BC334181DDBBF007F944F /* KMPostEditViewController.h */,
+				A36BC335181DDBBF007F944F /* KMPostEditViewController.m */,
 				A36BC32C1818B514007F944F /* KMPostTableViewCell.h */,
 				A36BC32D1818B514007F944F /* KMPostTableViewCell.m */,
 			);
@@ -271,6 +276,7 @@
 				A36BC2F21816200A007F944F /* main.m in Sources */,
 				A36BC32B1817614A007F944F /* KMPostsTableViewController.m in Sources */,
 				A36BC32E1818B514007F944F /* KMPostTableViewCell.m in Sources */,
+				A36BC336181DDBBF007F944F /* KMPostEditViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
