@@ -16,4 +16,6 @@
 
 @property (nonatomic, strong) IBOutlet UITextField *contentTextField;
 
+@property (nonatomic, strong) NSString *userName, *postTitle, *postDate, *postContent;
+
 @end

@@ -31,9 +31,6 @@
 @synthesize contentLabel;
 @synthesize dateLabel;
 
-- (IBAction)setUserNameText:(UITextField *)userNameText
-{
-    
-}
+
 
 @end

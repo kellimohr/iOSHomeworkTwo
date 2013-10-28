@@ -19,6 +19,9 @@
 @synthesize dateLabel;
 @synthesize contentTextField;
 
+@synthesize userName, postTitle, postDate, postContent;
+
+
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
@@ -33,6 +36,11 @@
 {
     [super viewDidLoad];
 	// Do any additional setup after loading the view.
+    userNameLabel.text = userName;
+    titleLabel.text = postTitle;
+    contentTextField.text = postContent;
+    dateLabel.text = postDate;
+    
 }
 
 - (void)didReceiveMemoryWarning

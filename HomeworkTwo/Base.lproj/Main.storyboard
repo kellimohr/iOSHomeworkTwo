@@ -55,7 +55,7 @@
                                     <outlet property="dateLabel" destination="R0S-sD-uUe" id="H8K-Kq-Oif"/>
                                     <outlet property="titleLabel" destination="tMw-Z4-SYT" id="NGc-9n-4Z1"/>
                                     <outlet property="userNameLabel" destination="7SM-Do-MTG" id="F1x-Xg-U5i"/>
-                                    <segue destination="KWe-id-sZR" kind="push" id="qbT-3w-lw8"/>
+                                    <segue destination="KWe-id-sZR" kind="push" identifier="editPost" id="qbT-3w-lw8"/>
                                 </connections>
                             </tableViewCell>
                         </prototypes>
@@ -65,6 +65,9 @@
                         </connections>
                     </tableView>
                     <navigationItem key="navigationItem" title="Get Social" id="e0M-Vq-EmJ"/>
+                    <connections>
+                        <outlet property="tableView" destination="kQs-54-jlV" id="NYK-fr-5Cx"/>
+                    </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="AR9-BI-Nzr" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

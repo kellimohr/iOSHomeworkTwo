@@ -9,12 +9,15 @@
 #import "KMPostsTableViewController.h"
 #import "KMPost.h"
 #import "KMPostTableViewCell.h"
+#import "KMPostEditViewController.h"
 
 @interface KMPostsTableViewController ()
 
 @end
 
 @implementation KMPostsTableViewController
+
+@synthesize tableView;
 
 - (id)initWithStyle:(UITableViewStyle)style
 {
@@ -142,6 +145,17 @@
     
     
     return cell;
+}
+
+- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
+    if ([segue.identifier isEqualToString:@"editPost"]) {
+        NSIndexPath *indexPath = [self.tableView indexPathForSelectedRow];
+        KMPostEditViewController *destViewController = segue.destinationViewController;
+        destViewController.userName = [ _posts objectAtIndex:indexPath.row];
+        destViewController.postContent = [ _posts objectAtIndex:indexPath.row];
+        destViewController.postDate = [ _posts objectAtIndex:indexPath.row];
+        destViewController.postTitle = [ _posts objectAtIndex:indexPath.row];
+    }
 }
 
 /*
