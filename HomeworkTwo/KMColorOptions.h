@@ -12,6 +12,6 @@
 
 + (UIColor *)randomColor;
 
-+ (UIColor *)lightenColor;
++ (UIColor *)lightenColor:(UIColor *)color;
 
 @end
