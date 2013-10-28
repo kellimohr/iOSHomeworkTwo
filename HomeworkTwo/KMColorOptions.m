@@ -12,7 +12,17 @@
 
 + (UIColor *) randomColor
 {
-    UIColor *newColor = nil;
+    
+    float randColorWithRed = (arc4random() % 101);
+    float randGreen = (arc4random() % 101);
+    float randBlue = (arc4random() % 101);
+    float randAlpha = (arc4random() % 101);
+    
+    UIColor *newColor = [UIColor colorWithRed: (randColorWithRed / 100)
+                                        green: (randGreen / 100)
+                                         blue: (randBlue / 100)
+                                        alpha: (randAlpha / 100)];
+    
     return newColor;
     
 }

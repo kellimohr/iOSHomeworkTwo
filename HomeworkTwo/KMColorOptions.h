@@ -10,8 +10,8 @@
 
 @interface UIColor (ColorOptions)
 
-+ (UIColor *) randomColor;
++ (UIColor *)randomColor;
 
-+ (UIColor *) lightenColor;
++ (UIColor *)lightenColor;
 
 @end

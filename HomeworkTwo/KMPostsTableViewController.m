@@ -10,6 +10,7 @@
 #import "KMPost.h"
 #import "KMPostTableViewCell.h"
 #import "KMPostEditViewController.h"
+#import "KMColorOptions.h"
 
 @interface KMPostsTableViewController ()
 
@@ -143,6 +144,7 @@
     cell.contentLabel.text = [_posts[indexPath.row] content];
     cell.dateLabel.text = dateString;
     
+    cell.contentView.backgroundColor = [UIColor randomColor];
     
     return cell;
 }
