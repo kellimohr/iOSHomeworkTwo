@@ -11,7 +11,7 @@
 
 @interface KMPostsTableViewController : UITableViewController
 
-@property (nonatomic) NSArray *posts;
+@property (nonatomic, strong) NSArray *posts;
 @property (nonatomic, strong) IBOutlet UITableView *tableView;
 
 
