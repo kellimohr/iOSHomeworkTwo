@@ -26,6 +26,7 @@
 		A36BC333181A0710007F944F /* KMAddPost.m in Sources */ = {isa = PBXBuildFile; fileRef = A36BC332181A0710007F944F /* KMAddPost.m */; };
 		A36BC336181DDBBF007F944F /* KMPostEditViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A36BC335181DDBBF007F944F /* KMPostEditViewController.m */; };
 		A36BC339181EFFC4007F944F /* KMColorOptions.m in Sources */ = {isa = PBXBuildFile; fileRef = A36BC338181EFFC4007F944F /* KMColorOptions.m */; };
+		A36BC33C181F3FC9007F944F /* NSObject+KMDateToString.m in Sources */ = {isa = PBXBuildFile; fileRef = A36BC33B181F3FC9007F944F /* NSObject+KMDateToString.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -68,6 +69,8 @@
 		A36BC335181DDBBF007F944F /* KMPostEditViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = KMPostEditViewController.m; path = ../KMPostEditViewController.m; sourceTree = "<group>"; };
 		A36BC337181EFFC4007F944F /* KMColorOptions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KMColorOptions.h; sourceTree = "<group>"; };
 		A36BC338181EFFC4007F944F /* KMColorOptions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KMColorOptions.m; sourceTree = "<group>"; };
+		A36BC33A181F3FC9007F944F /* NSObject+KMDateToString.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+KMDateToString.h"; sourceTree = "<group>"; };
+		A36BC33B181F3FC9007F944F /* NSObject+KMDateToString.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+KMDateToString.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -144,6 +147,8 @@
 				A36BC32D1818B514007F944F /* KMPostTableViewCell.m */,
 				A36BC337181EFFC4007F944F /* KMColorOptions.h */,
 				A36BC338181EFFC4007F944F /* KMColorOptions.m */,
+				A36BC33A181F3FC9007F944F /* NSObject+KMDateToString.h */,
+				A36BC33B181F3FC9007F944F /* NSObject+KMDateToString.m */,
 			);
 			path = HomeworkTwo;
 			sourceTree = "<group>";
@@ -279,6 +284,7 @@
 				A36BC333181A0710007F944F /* KMAddPost.m in Sources */,
 				A36BC2F61816200A007F944F /* KMAppDelegate.m in Sources */,
 				A36BC2F21816200A007F944F /* main.m in Sources */,
+				A36BC33C181F3FC9007F944F /* NSObject+KMDateToString.m in Sources */,
 				A36BC32B1817614A007F944F /* KMPostsTableViewController.m in Sources */,
 				A36BC32E1818B514007F944F /* KMPostTableViewCell.m in Sources */,
 				A36BC339181EFFC4007F944F /* KMColorOptions.m in Sources */,

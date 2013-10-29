@@ -11,6 +11,7 @@
 #import "KMPostTableViewCell.h"
 #import "KMPostEditViewController.h"
 #import "KMColorOptions.h"
+#import "NSObject+KMDateToString.h"
 
 @interface KMPostsTableViewController ()
 
@@ -132,17 +133,12 @@
     KMPostTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier forIndexPath:indexPath];
     
     
-    NSDate *postDate = [_posts[indexPath.row] timeStamp];
-    NSDateFormatter *dateFormat = [[NSDateFormatter alloc] init];
-    [dateFormat setDateStyle:NSDateFormatterShortStyle];
-    NSString *dateString = [dateFormat stringFromDate:postDate];
-    
     // Configure the cell...
     //cell.post = [_posts[indexPath.row]];
     cell.userNameLabel.text = [_posts[indexPath.row] userName];
     cell.titleLabel.text = [_posts[indexPath.row] title];
     cell.contentLabel.text = [_posts[indexPath.row] content];
-    cell.dateLabel.text = dateString;
+    cell.dateLabel.text = [NSObject convertDateToString: [ _posts[indexPath.row] timeStamp]];
     
     cell.contentView.backgroundColor = [UIColor randomColor];
     
@@ -158,8 +154,8 @@
         
         destViewController.userName = [ _posts[indexPath.row] userName];
         destViewController.postContent = [ _posts[indexPath.row] content];
-        destViewController.postDate = [ _posts[indexPath.row] title];
-        //destViewController.postTitle = dateString;
+        destViewController.postTitle = [ _posts[indexPath.row] title];
+        destViewController.postDate = [NSObject convertDateToString: [ _posts[indexPath.row] timeStamp]];
     }
 }
 
