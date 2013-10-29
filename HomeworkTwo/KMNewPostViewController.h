@@ -18,12 +18,14 @@
 @interface KMNewPostViewController : UIViewController
 {
     
-    IBOutlet UITextField *contentTextField, *userNameTextField, *titleTextField;
+    IBOutlet UITextField *contentTextField;
+    IBOutlet UITextField *userNameTextField;
+    IBOutlet UITextField *titleTextField;
     NSDate *postDate;
 
 }
 
--(IBAction)savePressed;
+-(IBAction)savePost;
 
 @property(nonatomic, strong) NSObject < NewPostDelegate > *delegate;
 

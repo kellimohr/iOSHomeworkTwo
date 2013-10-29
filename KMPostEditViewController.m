@@ -44,6 +44,11 @@
     
 }
 
+- (IBAction)savePost:(id)sender
+{
+
+}
+
 - (void)didReceiveMemoryWarning
 {
     [super didReceiveMemoryWarning];

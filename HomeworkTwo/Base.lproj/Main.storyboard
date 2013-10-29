@@ -67,7 +67,7 @@
                     <navigationItem key="navigationItem" title="Get Social" id="e0M-Vq-EmJ">
                         <barButtonItem key="leftBarButtonItem" title="New" id="Fsi-L8-2nY">
                             <connections>
-                                <segue destination="dfJ-Z3-x50" kind="push" id="l9o-zQ-UxP"/>
+                                <segue destination="dfJ-Z3-x50" kind="push" identifier="newPost" id="l9o-zQ-UxP"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
@@ -122,6 +122,11 @@
                     </view>
                     <navigationItem key="navigationItem" title="Edit Post" id="58r-eM-mBd">
                         <barButtonItem key="backBarButtonItem" title="Back" id="djp-c5-RC5"/>
+                        <barButtonItem key="rightBarButtonItem" title="Save" id="fx0-TI-LKn">
+                            <connections>
+                                <action selector="savePost:" destination="KWe-id-sZR" id="9xE-yK-kh3"/>
+                            </connections>
+                        </barButtonItem>
                     </navigationItem>
                     <connections>
                         <outlet property="contentTextField" destination="ezk-dT-gS7" id="fWW-pa-7Vu"/>
@@ -196,7 +201,9 @@
                         </barButtonItem>
                     </navigationItem>
                     <connections>
-                        <outlet property="contentTextField" destination="2mi-aE-jos" id="V7x-t1-ETd"/>
+                        <outlet property="contentTextField" destination="c6g-Kt-A8c" id="eqk-QG-Vrp"/>
+                        <outlet property="titleTextField" destination="41n-C5-G70" id="D8K-sg-FPr"/>
+                        <outlet property="userNameTextField" destination="2mi-aE-jos" id="xxc-Xf-NYJ"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="n69-iO-cHN" userLabel="First Responder" sceneMemberID="firstResponder"/>

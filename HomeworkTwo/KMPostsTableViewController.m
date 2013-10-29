@@ -95,7 +95,7 @@
     post10.content = @"I really really hope I'm doing this right.";
     post10.timeStamp = [NSDate date];
     
-    _posts = [NSArray arrayWithObjects: post1, post2, post3, post4, post5, post6, post7,
+    _posts = [NSMutableArray arrayWithObjects: post1, post2, post3, post4, post5, post6, post7,
                                         post8, post9, post10, nil];
     
 
@@ -103,7 +103,7 @@
     // self.clearsSelectionOnViewWillAppear = NO;
  
     // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
-       self.navigationItem.rightBarButtonItem = self.editButtonItem;
+    //   self.navigationItem.rightBarButtonItem = self.editButtonItem;
 }
 
 - (void)didReceiveMemoryWarning
@@ -153,13 +153,12 @@
         
         KMPostEditViewController *destViewController = segue.destinationViewController;
         
+        NSInteger selectedRow = [[self.tableView indexPathForSelectedRow] row];
+        
         destViewController.userName = [ _posts[indexPath.row] userName];
         destViewController.postContent = [ _posts[indexPath.row] content];
         destViewController.postTitle = [ _posts[indexPath.row] title];
         destViewController.postDate = [NSObject convertDateToString: [ _posts[indexPath.row] timeStamp]];
-    }
-    else if ([segue.identifier isEqualToString:@"newPost"]){
-        KMNewPostViewController *destViewController = segue.destinationViewController;
     }
 }
 
@@ -172,7 +171,7 @@
 }
 */
 
-
+/*
 // Override to support editing the table view.
 - (void)tableView:(UITableView *)tableView commitEditingStyle:(UITableViewCellEditingStyle)editingStyle forRowAtIndexPath:(NSIndexPath *)indexPath
 {
@@ -184,7 +183,7 @@
         // Create a new instance of the appropriate class, insert it into the array, and add a new row to the table view
     }   
 }
-
+ */
 
 /*
 // Override to support rearranging the table view.

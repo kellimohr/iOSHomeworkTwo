@@ -29,22 +29,26 @@
 	// Do any additional setup after loading the view.
 }
 
--(IBAction)savePressed
+-(IBAction)savePost
 {
+    
+    NSLog(@"Button Pushed!");
+    
+    KMPost *postToAdd = [[KMPost alloc] init];
+    postToAdd.userName = userNameTextField.text;
+    postToAdd.title = titleTextField.text;
+    postToAdd.content = contentTextField.text;
+    postToAdd.timeStamp = [NSDate date];
+    
     //Is anyone listening
     if ([_delegate  respondsToSelector:@selector(newPost:)])
     {
-        KMPost *postToAdd = [[KMPost alloc] init];
-        postToAdd.userName = userNameTextField.text;
-        postToAdd.title = titleTextField.text;
-        postToAdd.content = contentTextField.text;
-        postToAdd.timeStamp = [NSDate date];
         
         //send the delegate function with the amount entered by the user
       //  [_delegate newPost:[postToAdd KMPost]];
     }
     
-    [self dismissModalViewControllerAnimated:YES];
+    [self.navigationController popToRootViewControllerAnimated:YES];
 }
 
 

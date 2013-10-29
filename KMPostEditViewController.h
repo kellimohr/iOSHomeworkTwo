@@ -10,12 +10,14 @@
 
 @interface KMPostEditViewController : UIViewController
 
-@property (nonatomic, strong) IBOutlet UILabel *userNameLabel;
-@property (nonatomic, strong) IBOutlet UILabel *titleLabel;
-@property (nonatomic, strong) IBOutlet UILabel *dateLabel;
+@property (nonatomic, weak) IBOutlet UILabel *userNameLabel;
+@property (nonatomic, weak) IBOutlet UILabel *titleLabel;
+@property (nonatomic, weak) IBOutlet UILabel *dateLabel;
 
-@property (nonatomic, strong) IBOutlet UITextField *contentTextField;
+@property (nonatomic, weak) IBOutlet UITextField *contentTextField;
 
 @property (nonatomic, strong) NSString *userName, *postTitle, *postDate, *postContent;
+
+- (IBAction)savePost:(id)sender;
 
 @end
