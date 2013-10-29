@@ -23,7 +23,6 @@
 
 }
 
--(IBAction)cancelPressed;
 -(IBAction)savePressed;
 
 @property(nonatomic, strong) NSObject < NewPostDelegate > *delegate;

@@ -34,8 +34,14 @@
     //Is anyone listening
     if ([_delegate  respondsToSelector:@selector(newPost:)])
     {
+        KMPost *postToAdd = [[KMPost alloc] init];
+        postToAdd.userName = userNameTextField.text;
+        postToAdd.title = titleTextField.text;
+        postToAdd.content = contentTextField.text;
+        postToAdd.timeStamp = [NSDate date];
+        
         //send the delegate function with the amount entered by the user
-        [_delegate newPost:[.text intValue]];
+      //  [_delegate newPost:[postToAdd KMPost]];
     }
     
     [self dismissModalViewControllerAnimated:YES];

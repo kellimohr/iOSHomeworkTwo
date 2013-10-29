@@ -10,6 +10,7 @@
 #import "KMPost.h"
 #import "KMPostTableViewCell.h"
 #import "KMPostEditViewController.h"
+#import "KMNewPostViewController.h"
 #import "KMColorOptions.h"
 #import "NSObject+KMDateToString.h"
 
@@ -156,6 +157,9 @@
         destViewController.postContent = [ _posts[indexPath.row] content];
         destViewController.postTitle = [ _posts[indexPath.row] title];
         destViewController.postDate = [NSObject convertDateToString: [ _posts[indexPath.row] timeStamp]];
+    }
+    else if ([segue.identifier isEqualToString:@"newPost"]){
+        KMNewPostViewController *destViewController = segue.destinationViewController;
     }
 }
 

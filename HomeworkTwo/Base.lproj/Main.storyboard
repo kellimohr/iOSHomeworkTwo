@@ -64,10 +64,15 @@
                             <outlet property="delegate" destination="fgj-Df-5Gr" id="HFp-gV-W0b"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" title="Get Social" id="e0M-Vq-EmJ"/>
+                    <navigationItem key="navigationItem" title="Get Social" id="e0M-Vq-EmJ">
+                        <barButtonItem key="leftBarButtonItem" title="New" id="Fsi-L8-2nY">
+                            <connections>
+                                <segue destination="dfJ-Z3-x50" kind="push" id="l9o-zQ-UxP"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                     <connections>
                         <outlet property="tableView" destination="kQs-54-jlV" id="NYK-fr-5Cx"/>
-                        <segue destination="dfJ-Z3-x50" kind="push" id="SJM-ic-zCg"/>
                     </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="AR9-BI-Nzr" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -127,7 +132,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ujY-UA-3lm" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="894" y="-253"/>
+            <point key="canvasLocation" x="974" y="-789"/>
         </scene>
         <!--New Post View Controller - New Post-->
         <scene sceneID="Kf0-a4-664">
@@ -183,11 +188,20 @@
                         </subviews>
                         <color key="backgroundColor" red="0.5" green="0.0" blue="0.5" alpha="1" colorSpace="calibratedRGB"/>
                     </view>
-                    <navigationItem key="navigationItem" title="New Post" id="XGa-ZE-ljI"/>
+                    <navigationItem key="navigationItem" title="New Post" id="XGa-ZE-ljI">
+                        <barButtonItem key="rightBarButtonItem" title="Save" id="KRT-ig-t2r">
+                            <connections>
+                                <action selector="savePressed" destination="dfJ-Z3-x50" id="bEh-ly-oI9"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="contentTextField" destination="2mi-aE-jos" id="V7x-t1-ETd"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="n69-iO-cHN" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1276" y="-256"/>
+            <point key="canvasLocation" x="988" y="-32"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="Q5q-NI-GHC">
