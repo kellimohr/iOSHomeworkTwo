@@ -29,6 +29,19 @@
 	// Do any additional setup after loading the view.
 }
 
+-(IBAction)savePressed
+{
+    //Is anyone listening
+    if ([_delegate  respondsToSelector:@selector(newPost:)])
+    {
+        //send the delegate function with the amount entered by the user
+        [_delegate newPost:[.text intValue]];
+    }
+    
+    [self dismissModalViewControllerAnimated:YES];
+}
+
+
 - (void)didReceiveMemoryWarning
 {
     [super didReceiveMemoryWarning];

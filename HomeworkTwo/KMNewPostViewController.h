@@ -7,7 +7,28 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "KMPost.h"
+
+//delegate to return a new post entered by the user
+@protocol NewPostDelegate
+   @required
+   -(void)newPost:(KMPost *)post;
+@end
 
 @interface KMNewPostViewController : UIViewController
+{
+    
+    IBOutlet UITextField *contentTextField, *userNameTextField, *titleTextField;
+    NSDate *postDate;
+
+}
+
+-(IBAction)cancelPressed;
+-(IBAction)savePressed;
+
+@property(nonatomic, strong) NSObject < NewPostDelegate > *delegate;
+
+
+
 
 @end
