@@ -196,7 +196,7 @@
                     <navigationItem key="navigationItem" title="New Post" id="XGa-ZE-ljI">
                         <barButtonItem key="rightBarButtonItem" title="Save" id="KRT-ig-t2r">
                             <connections>
-                                <action selector="savePressed" destination="dfJ-Z3-x50" id="bEh-ly-oI9"/>
+                                <action selector="savePost" destination="dfJ-Z3-x50" id="KSP-XY-3hu"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>

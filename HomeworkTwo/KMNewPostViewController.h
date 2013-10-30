@@ -10,7 +10,7 @@
 #import "KMPost.h"
 
 //delegate to return a new post entered by the user
-@protocol NewPostDelegate
+@protocol NewPostViewControllerDelegate
    @required
    -(void)newPost:(KMPost *)post;
 @end
@@ -27,7 +27,7 @@
 
 -(IBAction)savePost;
 
-@property(nonatomic, strong) NSObject < NewPostDelegate > *delegate;
+@property(nonatomic, strong) id< NewPostViewControllerDelegate > delegate;
 
 
 
