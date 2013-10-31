@@ -155,10 +155,6 @@
         
         destViewController.post = _posts[selectedRow];
         
-        //destViewController.userName = [ _posts[indexPath.row] userName];
-        //destViewController.postContent = [ _posts[indexPath.row] content];
-        //destViewController.postTitle = [ _posts[indexPath.row] title];
-        //destViewController.postDate = [NSObject convertDateToString: [ _posts[indexPath.row] timeStamp]];
     }
     if ([segue.identifier isEqualToString:@"newPost"]) {
         
