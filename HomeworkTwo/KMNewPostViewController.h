@@ -11,23 +11,26 @@
 
 //delegate to return a new post entered by the user
 @protocol NewPostViewControllerDelegate
-   @required
-   -(void)newPost:(KMPost *)post;
+
+@optional
+
+-(void)reloadTable;
+
 @end
 
 @interface KMNewPostViewController : UIViewController
-{
+
+@property (nonatomic, weak) KMPost *post;
     
-    IBOutlet UITextField *contentTextField;
-    IBOutlet UITextField *userNameTextField;
-    IBOutlet UITextField *titleTextField;
-    NSDate *postDate;
-
-}
-
--(IBAction)savePost;
+@property (nonatomic, weak) IBOutlet UITextField *contentTextField;
+@property (nonatomic, weak) IBOutlet UITextField *userNameTextField;
+@property (nonatomic, weak)IBOutlet UITextField *titleTextField;
 
 @property(nonatomic, strong) id< NewPostViewControllerDelegate > delegate;
+
+-(IBAction)savePost:(id)sender;
+
+
 
 
 

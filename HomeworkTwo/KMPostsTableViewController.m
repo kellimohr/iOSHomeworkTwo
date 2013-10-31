@@ -149,16 +149,24 @@
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
     if ([segue.identifier isEqualToString:@"editPost"]) {
         
-        NSIndexPath *indexPath = [self.tableView indexPathForSelectedRow];
-        
         KMPostEditViewController *destViewController = segue.destinationViewController;
         
         NSInteger selectedRow = [[self.tableView indexPathForSelectedRow] row];
         
-        destViewController.userName = [ _posts[indexPath.row] userName];
-        destViewController.postContent = [ _posts[indexPath.row] content];
-        destViewController.postTitle = [ _posts[indexPath.row] title];
-        destViewController.postDate = [NSObject convertDateToString: [ _posts[indexPath.row] timeStamp]];
+        destViewController.post = _posts[selectedRow];
+        
+        //destViewController.userName = [ _posts[indexPath.row] userName];
+        //destViewController.postContent = [ _posts[indexPath.row] content];
+        //destViewController.postTitle = [ _posts[indexPath.row] title];
+        //destViewController.postDate = [NSObject convertDateToString: [ _posts[indexPath.row] timeStamp]];
+    }
+    if ([segue.identifier isEqualToString:@"newPost"]) {
+        
+        KMNewPostViewController *destViewController = segue.destinationViewController;
+        
+        NSInteger selectedRow = [[self.tableView indexPathForSelectedRow] row];
+        
+        destViewController.post = _posts[selectedRow +1];
     }
 }
 

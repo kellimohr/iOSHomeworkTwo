@@ -8,6 +8,7 @@
 
 #import "KMPostEditViewController.h"
 #import "KMPost.h"
+#import "NSObject+KMDateToString.h"
 
 @interface KMPostEditViewController ()
 
@@ -38,19 +39,19 @@
     [super viewDidLoad];
     
 	// Do any additional setup after loading the view.
-    userNameLabel.text = userName;
-    titleLabel.text = postTitle;
-    contentTextField.text = postContent;
-    dateLabel.text = postDate;
+    userNameLabel.text = _post.userName;
+    titleLabel.text = _post.title;
+    contentTextField.text = _post.content;
+    dateLabel.text = [NSObject convertDateToString: _post.timeStamp];
     
 }
 
 - (IBAction)savePost:(id)sender
 {
-    userName = userNameLabel.text;
-    postTitle = titleLabel.text;
-    postContent = contentTextField.text;
-  //  postDate.timeStamp = [NSDate date];
+    _post.userName = userNameLabel.text;
+    _post.title = titleLabel.text;
+    _post.content = contentTextField.text;
+    _post.timeStamp = [NSDate date];
     
     [self.navigationController popToRootViewControllerAnimated:YES];
 }

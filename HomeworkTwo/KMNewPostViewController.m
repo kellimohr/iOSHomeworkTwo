@@ -7,6 +7,7 @@
 //
 
 #import "KMNewPostViewController.h"
+#import "KMPost.h"
 
 @interface KMNewPostViewController ()
 
@@ -29,24 +30,15 @@
 	// Do any additional setup after loading the view.
 }
 
--(IBAction)savePost
+-(IBAction)savePost:(id)sender
 {
     
     NSLog(@"Button Pushed!");
     
-    KMPost *postToAdd = [[KMPost alloc] init];
-    postToAdd.userName = userNameTextField.text;
-    postToAdd.title = titleTextField.text;
-    postToAdd.content = contentTextField.text;
-    postToAdd.timeStamp = [NSDate date];
-    
-    //Is anyone listening
-    if ([_delegate  respondsToSelector:@selector(newPost:)])
-    {
-        
-        //send the delegate function with the amount entered by the user
-      //  [_delegate newPost:[postToAdd KMPost]];
-    }
+    _post.userName = _userNameTextField.text;
+    _post.title = _titleTextField.text;
+    _post.content = _contentTextField.text;
+    _post.timeStamp = [NSDate date];
     
     [self.navigationController popToRootViewControllerAnimated:YES];
 }
