@@ -35,12 +35,17 @@
     
     NSLog(@"Button Pushed!");
     
-    _post.userName = _userNameTextField.text;
-    _post.title = _titleTextField.text;
-    _post.content = _contentTextField.text;
-    _post.timeStamp = [NSDate date];
+//    _post.userName = _userNameTextField.text;
+//    _post.title = _titleTextField.text;
+//    _post.content = _contentTextField.text;
+//    _post.timeStamp = [NSDate date];
     
-    [self.navigationController popToRootViewControllerAnimated:YES];
+    KMPost *post = [[KMPost alloc] init];
+    post.title = _titleTextField.text;
+    post.content = _contentTextField.text;
+    post.timeStamp = [NSDate date];
+    
+    [self.delegate postWasAdded: post];
 }
 
 

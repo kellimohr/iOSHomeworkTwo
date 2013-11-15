@@ -14,13 +14,13 @@
 
 @optional
 
--(void)reloadTable;
+-(void)postWasAdded:(KMPost *)post;
 
 @end
 
 @interface KMNewPostViewController : UIViewController
 
-@property (nonatomic, weak) KMPost *post;
+// @property (nonatomic, weak) KMPost *post; Don't need this anymore
     
 @property (nonatomic, weak) IBOutlet UITextField *contentTextField;
 @property (nonatomic, weak) IBOutlet UITextField *userNameTextField;

@@ -14,7 +14,7 @@
 #import "KMColorOptions.h"
 #import "NSObject+KMDateToString.h"
 
-@interface KMPostsTableViewController ()
+@interface KMPostsTableViewController () <NewPostViewControllerDelegate>
 
 @end
 
@@ -114,6 +114,12 @@
 
 #pragma mark - Table view data source
 
+//- (void)viewWillAppear:(BOOL)animated
+//{
+//    [super viewWillAppear:TRUE];
+//    [self.tableView reloadTable];
+//}
+
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView
 {
 #warning Potentially incomplete method implementation.
@@ -160,10 +166,16 @@
         
         KMNewPostViewController *destViewController = segue.destinationViewController;
         
-        NSInteger selectedRow = [[self.tableView indexPathForSelectedRow] row];
+        destViewController.delegate = self;
         
-        destViewController.post = _posts[selectedRow +1];
     }
+}
+
+- (void) postWasAdded:(KMPost *)post
+{
+    [self.navigationController popToRootViewControllerAnimated:YES];
+    [_posts addObject:post];
+    [self.tableView reloadData];
 }
 
 /*
